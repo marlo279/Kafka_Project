@@ -1,4 +1,4 @@
-package com.marlo.demo;
+package com.marlo.demo.cloudproviders.conduktor;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -32,7 +32,7 @@ public class Producer {
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
     // Create a producer record
-        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("demo_java", "Laptop");
+        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("demo_java", "77");
 
     // Send Data
         producer.send(producerRecord);
